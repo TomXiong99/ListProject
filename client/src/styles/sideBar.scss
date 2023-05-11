@@ -1,0 +1,109 @@
+@import "index.scss";
+
+#side-bar {
+  height: calc(100% - 3rem);
+  width: 20rem;
+  color: $white-mid;
+  margin: 0;
+  padding: 0;
+  background-color: $black-low;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #nav-container {
+    width: 100%;
+    height: 1px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #createNew {
+      height: 2rem;
+      width: 18rem;
+      background-color: $black-low;
+      border: none;
+      color: $white-mid;
+      display: flex;
+      padding-left: 1rem;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    #createNew:hover {
+      color: white;
+    }
+
+    #divider {
+      width: 18rem;
+      height: 1px;
+      background-color: $white-high;
+      padding: 0;
+      margin: 0;
+    }
+
+    .link-wrapper {
+      display: flex;
+      width: 18rem;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        background-color: $white-high;
+        width: 17rem;
+        height: 2rem;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        color: $white-mid;
+        background-color: $black-low;
+      }
+      a:hover {
+        color: white;
+      }
+
+      .link-settings {
+        color: $white-mid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 1rem;
+        width: 1rem;
+        padding-bottom: 0.5rem;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+      }
+      .link-settings:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .context-menu {
+        transform: translate(6.5rem, 2rem);
+        border: 1px solid white;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.25rem;
+        background-color: black;
+        list-style-type: none;
+        z-index: 1000;
+
+        .context-menu-item {
+          margin: 0.25rem;
+        }
+
+        .context-menu-item:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

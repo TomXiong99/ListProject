@@ -1,0 +1,23 @@
+POST http://localhost:8888/api/login
+Content-Type: application/json
+
+{
+    "username": "tom",
+    "password": "xiong"
+}
+###
+
+GET http://localhost:8888/api/users/tom
+
+###
+
+GET  http://localhost:8888/api/list/6314d42ef28d89da2dd4de89
+
+###
+PUT http://localhost:8888/api/list/6314d42ef28d89da2dd4de89
+Content-Type: application/json
+
+{
+    "title": "new test",
+    "contents": ["test"]
+}

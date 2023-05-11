@@ -1,0 +1,39 @@
+$white-high: rgba(#ffffff, 0.85);
+$white-mid: rgba(#ffffff, 0.6);
+$white-low: rgba(#ffffff, 0.4);
+
+$black-high: #000000;
+$black-mid: #101010;
+$black-low: #202020;
+
+$blue-light: #00b2ff;
+$blue-dark: #006aff;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: $white-high;
+  font-family: serif;
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: $black-low;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $white-low;
+}
+
+.scroll::-webkit-scrollbar-corner {
+  background: $black-mid;
+}
